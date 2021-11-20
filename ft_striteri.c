@@ -6,11 +6,12 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 15:43:46 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/18 22:32:07 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:15:33 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	unsigned int	u;
