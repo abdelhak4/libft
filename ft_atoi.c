@@ -6,12 +6,11 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:26:04 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/18 17:00:56 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:33:54 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	smallf(const char *str)
 {

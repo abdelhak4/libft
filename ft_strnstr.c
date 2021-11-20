@@ -6,7 +6,7 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 11:45:17 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/06 20:57:03 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:33:35 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	char s1[9];
-	char s2[] = "MZIRIBMZE";
-	size_t max = strlen(s2);
-	printf("%s\n", ft_strnstr(s1, s2, 14));
-	printf("%s", strnstr(s1, s2, 14));
-}*/

@@ -6,12 +6,11 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/09 09:19:17 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/17 21:09:22 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:32:51 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

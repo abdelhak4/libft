@@ -6,7 +6,7 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:52:48 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/08 11:32:46 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:29:48 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-/*
-int main()
-{
-	char str[] = "abcdacacacazcscccdccccc";
-	printf("%s\n", ft_memchr(str, 'z', 11));
-	printf("%s", memchr(str, 'z', 11));
-}
-*/

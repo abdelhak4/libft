@@ -6,13 +6,12 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 18:53:18 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/15 11:02:27 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 11:30:48 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putchar_fd(char c, int fd)
 {
