@@ -6,13 +6,11 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:21:53 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/09 09:04:26 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/21 18:24:14 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)

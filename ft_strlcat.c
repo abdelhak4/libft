@@ -6,7 +6,7 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 12:56:55 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/20 11:00:03 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/21 18:10:07 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
+	if (!dst && src && dstsize == 0)
+		return (ft_strlen(src));
 	len_d = ft_strlen(dst);
 	len_s = ft_strlen(src);
 	if (dstsize <= len_d)

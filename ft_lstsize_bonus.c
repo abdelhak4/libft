@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 12:16:05 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/20 17:57:23 by ael-mous         ###   ########.fr       */
+/*   Created: 2021/11/17 04:51:38 by ael-mous          #+#    #+#             */
+/*   Updated: 2021/11/17 20:03:41 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+int	ft_lstsize(t_list *lst)
 {
-	size_t			i;
-	unsigned char	*destt;
-	unsigned char	*srcc;
+	int	i;
 
-	destt = (unsigned char *)dst;
-	srcc = (unsigned char *)src;
 	i = 0;
-	if (destt == 0 && srcc == 0)
-		return (NULL);
-	if (dst != src)
+	while (lst != NULL)
 	{
-		while (i < n)
-		{
-			destt[i] = srcc[i];
-			i++;
-		}
+		lst = lst->next;
+		i++;
 	}
-	return (dst);
+	return (i);
 }
+/*
+int main()
+{
+	t_list *head;
+	t_list *new;
+	
+	head = ft_lstnew(ft_strdup("JJD"));
+	head-> next = new;
+	new = ft_lstnew(ft_strdup("kkkk"));
+
+	t_list *lst = head;
+	int k = ft_lstsize(lst);
+	printf("%d", k);
+}*/

@@ -6,13 +6,15 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 07:44:35 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/02 07:56:47 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/22 22:53:01 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *c)
+#include <stddef.h>
+
+size_t	ft_strlen(const char *c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (c[i] != 0)

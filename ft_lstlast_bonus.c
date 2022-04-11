@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 12:16:05 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/20 17:57:23 by ael-mous         ###   ########.fr       */
+/*   Created: 2021/11/27 19:01:40 by ael-mous          #+#    #+#             */
+/*   Updated: 2021/11/27 19:12:49 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <string.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+t_list	*ft_lstlast(t_list *lst)
 {
-	size_t			i;
-	unsigned char	*destt;
-	unsigned char	*srcc;
-
-	destt = (unsigned char *)dst;
-	srcc = (unsigned char *)src;
-	i = 0;
-	if (destt == 0 && srcc == 0)
+	if (!lst)
 		return (NULL);
-	if (dst != src)
+	while (lst->next)
 	{
-		while (i < n)
-		{
-			destt[i] = srcc[i];
-			i++;
-		}
+		lst = lst->next;
 	}
-	return (dst);
+	return (lst);
 }
+//int main()
+//{
+//    t_list *head;
+//    t_list *lst;
+//    head = ft_lstnew("hhdo");
+//    lst = head;
+//    head->next = ft_lstnew(" kilo");
+//    t_list *last;
+//    last = ft_lstlast(lst);
+//    printf("%s", last->content);
+//}

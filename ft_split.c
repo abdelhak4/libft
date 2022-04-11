@@ -6,13 +6,13 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 16:34:12 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/18 21:33:33 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 17:59:33 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**c_str(char **str, char const *s, char c)
+static char	**c_str(char **str, char const *s, char c)
 {
 	size_t	i;
 	size_t	k;
@@ -39,7 +39,7 @@ char	**c_str(char **str, char const *s, char c)
 	return (str);
 }
 
-int	w_count(char const *s, char c)
+static int	w_count(char const *s, char c)
 {
 	int	i;
 	int	count;

@@ -6,13 +6,13 @@
 /*   By: ael-mous <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 18:38:21 by ael-mous          #+#    #+#             */
-/*   Updated: 2021/11/16 22:09:43 by ael-mous         ###   ########.fr       */
+/*   Updated: 2021/11/20 17:56:29 by ael-mous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ncount(long i)
+static int	ncount(long i)
 {
 	int			counter;
 
@@ -32,7 +32,7 @@ int	ncount(long i)
 	return (counter);
 }
 
-char	*ntcnv(long c)
+static char	*ntcnv(long c)
 {
 	int			count;
 	long		lo;
